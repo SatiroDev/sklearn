@@ -16,10 +16,14 @@ vetor = TfidfVectorizer()
 X, y = vetor.fit_transform(data.data), data.target
 X_treino, X_test, y_treino, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
+
+
 # modelo
 # model = ExtraTreeClassifier()
 # model = MultinomialNB(alpha=0.5)
 model = LogisticRegression(C=5) # menor = mais simples; maior = mais detalhado
+
+
 
 # treina o modelo
 model.fit(X_treino, y_treino)
