@@ -1,4 +1,4 @@
-from sklearnMain.dataset import load_questions
+from dataset import load_questions
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 
